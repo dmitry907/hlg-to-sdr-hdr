@@ -16,6 +16,47 @@ and take the cloud texture with them.
 
 This app makes that fold explicit and leaves the decision to you.
 
+## What the fold costs
+
+Both versions below were adjusted by hand — each program given its best shot rather than
+its default. The reference is the original `.HIF` itself, so the question is not whose
+taste you prefer: it is how much of the detail actually recorded in the file survives the
+fold down to an ordinary screen.
+
+![Storm sky, full frame](docs/storm-full.jpg)
+
+Across the whole sky of this frame, 62% of the modulation present in the original file
+reaches the JPEG here, against 24% the other way.
+
+![Storm sky at 100%](docs/storm-sky.jpg)
+
+The same frame at 100%, in the brightest quarter of the sky — where the fold does its
+damage. 78% against 38%.
+
+![Evening sky, full frame](docs/sunset-full.jpg)
+
+An ordinary evening, nothing dramatic in the light. Across the whole sky, 82% against 46%.
+
+![Evening sky at 100%](docs/sunset-sky.jpg)
+
+In the brightest quarter of that sky the gap is widest: 57% against 18%. Not one pixel of
+the other version is clipped to white. The detail is not burned out — it is compressed
+away, which is why looking for blown highlights misses the problem entirely.
+
+<details>
+<summary>How this was measured</summary>
+
+The original is decoded as recorded — 10-bit, BT.2020, ARIB STD-B67 — and the inverse HLG
+OETF from BT.2100 returns it to scene light. The SDR versions are linearised with the
+inverse sRGB EOTF, so all three are compared in a single linear domain. Detail means local
+modulation, `std(L - blur) / mean(blur)`, measured inside a sky mask shared by both
+versions so that exactly the same pixels are judged on both sides. The brightest quarter is
+defined on the original, not on either result. Measured at full resolution.
+
+Your own files will differ. The point is that the measurement is one you can repeat.
+
+</details>
+
 ## What it does
 
 - **Four ways to compress the range**, from the most protective to the most cinematic,
