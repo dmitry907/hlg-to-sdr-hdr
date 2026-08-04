@@ -30,11 +30,37 @@ This app makes that fold explicit and leaves the decision to you.
 - **Output as JPEG or HEIF**, 8 or 10 bit, plain SDR or carrying an ISO 21496-1 gain map —
   one file that ordinary screens read as your SDR conversion and HDR displays show with the
   highlights let back out.
-- **A Photos editing extension**, so the conversion can happen inside Photos, on the
-  original master, and be reopened and re-tuned later.
 - **Five interface languages**: English, Russian, Spanish, Japanese, Simplified Chinese.
 
 Metadata — EXIF, GPS, orientation, IPTC — is carried across to the output.
+
+## Inside Photos
+
+The app installs an editing extension, and this is the part worth reading about.
+
+Import your `.HIF` files into Photos as usual and they sit there as HDR masters. Open one,
+press Edit, and pick **HLG to SDR/HDR** from the extensions menu. The same converter opens
+inside the Photos editor — the four operators, Auto, all seven sliders, the histogram — and
+it works on the **original master**, not on an export of it. That distinction is the whole
+point: every other route out of Photos hands you a frame that has already been folded down
+to SDR by somebody else's guess, and there is no getting the highlights back afterwards.
+
+What that buys you:
+
+- **Nothing is destroyed.** Photos keeps the HLG original untouched. Revert to Original
+  brings it back at any time, however many times you have converted it.
+- **The edit stays open.** Reopen it a month later and every slider is where you left it,
+  along with the output format and quality. Change your mind, adjust, save again — always
+  from the master, never from the previous result.
+- **You choose what lands in the library**: JPEG or HEIF, 8 or 10 bit, plain SDR or carrying
+  an ISO 21496-1 gain map. Photos stores what you picked as it was written, gain map intact,
+  so an HDR display shows the highlights coming back.
+- **Or take it out of Photos entirely.** Export to a file writes the full-size result
+  wherever you want, in the same format, without touching the photo in the library at all.
+
+One thing to know: run it **before** any other edits. If Photos has already baked in
+adjustments of its own, the extension is handed the rendered result rather than the HLG
+master — it will say so, and Revert to Original puts things right.
 
 ## Cameras
 
