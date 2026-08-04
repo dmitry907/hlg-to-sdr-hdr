@@ -1,0 +1,99 @@
+HLG to SDR/HDR — End User License Agreement
+Version 1.0 — 3 August 2026
+
+Copyright (c) 2026 Dmitry Semenov. All rights reserved.
+
+This Agreement governs your use of the application "HLG to SDR/HDR"
+(HLGConverter.app), including its extensions and accompanying files
+(the "Software"). By installing or using the Software you accept this
+Agreement. If you do not accept it, do not install or use the Software.
+
+
+1. LICENSE GRANT
+
+The Software is provided free of charge. You are granted a non-exclusive,
+worldwide, perpetual license to install and use the Software on any number
+of computers you own or control, for any purpose, including commercial and
+professional photography work.
+
+No fee is charged and none will be charged for this version.
+
+
+2. YOUR IMAGES ARE YOURS
+
+You retain all rights to the images you process with the Software. No claim
+is made to your source files, your output files, or any settings or presets
+you create. The Software does not transmit your files anywhere; it performs
+all processing locally and makes no network connections.
+
+
+3. RESTRICTIONS
+
+You may not:
+
+  (a) sell, rent, sublicense, or redistribute the Software, or include it in
+      any bundle, collection, or commercial offering;
+  (b) modify, adapt, translate, decompile, disassemble, or reverse engineer
+      the Software, except to the extent this restriction is prohibited by
+      applicable law;
+  (c) remove or alter any copyright, trademark, or other proprietary notice.
+
+Unmodified redistribution of the original installer for non-commercial
+purposes, with attribution and a link to the official download page, is
+permitted.
+
+
+4. OWNERSHIP
+
+The Software is licensed, not sold. All title, copyright, and intellectual
+property rights in the Software remain with Dmitry Semenov. This Agreement
+grants no rights to the source code.
+
+
+5. NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+The Software modifies image tone and colour. Results depend on your source
+files, display, and settings. You are responsible for verifying output before
+relying on it, and for keeping backups of your original files. The Software
+writes new files and does not alter its input, but no guarantee is made
+against data loss.
+
+
+6. LIMITATION OF LIABILITY
+
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM
+OR IN CONNECTION WITH THE SOFTWARE OR ITS USE, INCLUDING WITHOUT LIMITATION
+ANY LOSS OF DATA, LOSS OF IMAGES, OR LOSS OF PROFITS.
+
+
+7. TRADEMARKS
+
+Sony, Nikon, Apple, and other product and company names mentioned in the
+Software or its documentation are trademarks of their respective owners and
+are used for descriptive and identification purposes only. The Software is
+not affiliated with, endorsed by, or sponsored by any of them.
+
+
+8. TERM
+
+This Agreement is effective until terminated. It terminates automatically if
+you breach any of its terms; on termination you must stop using the Software
+and delete all copies. You may terminate it at any time by deleting the
+Software.
+
+
+9. GOVERNING LAW
+
+This Agreement is governed by the laws of the United Arab Emirates, without
+regard to conflict of law provisions. If any provision is held unenforceable,
+the remaining provisions remain in full force.
+
+
+10. CONTACT
+
+fdbk-hlg-sdr@semeonov.com
