@@ -9,10 +9,12 @@ that modern displays can show in full.
 ## Why
 
 A Sony HLG HEIF holds two to three stops more highlight than a JPEG, 10-bit gradients and a
-wide colour gamut. What it does not hold is any instruction for folding that range down to
-an ordinary screen — Sony leaves it out, and no standard fills the gap. So every program
-guesses differently, and the guesses show up in the sky: bright areas run into flat white
-and take the cloud texture with them.
+wide colour gamut. The file is not vague about what it is — it declares BT.2020 primaries and
+the BT.2100 HLG curve. What it does not carry is any per-image instruction, and no gain map,
+for fitting that highlight range into an ordinary 100 cd/m² screen: HLG is defined against a
+display of a given peak brightness, not against an SDR container. So every program decides
+that part for itself, they disagree, and the disagreement shows up in the sky — bright areas
+run into flat white and take the cloud texture with them.
 
 This app makes that fold explicit and leaves the decision to you.
 
@@ -60,7 +62,7 @@ Your own files will differ. The point is that the measurement is one you can rep
 ## What it does
 
 - **Four ways to compress the range**, from the most protective to the most cinematic,
-  including the ITU BT.2446 Method A reference method.
+  including the conversion described in ITU-R Report BT.2446-1 (Method A).
 - **Live side-by-side comparison** against another operator, against the system's own
   rendering, or against a file you already exported from somewhere else.
 - **Exposure, brightness, highlights, midtones, shadows and two kinds of contrast.**
@@ -68,7 +70,7 @@ Your own files will differ. The point is that the measurement is one you can rep
 - **Auto**, with a different method per operator.
 - **A 100% loupe and a histogram** that flags clipping, and shows the HDR headroom when an
   HDR format is selected.
-- **Output as JPEG or HEIF**, 8 or 10 bit, plain SDR or carrying an ISO 21496-1 gain map —
+- **Output as JPEG or HEIF**, 8 or 10 bit, plain SDR or carrying an ISO 21496-1:2025 gain map —
   one file that ordinary screens read as your SDR conversion and HDR displays show with the
   highlights let back out.
 - **Five interface languages**: English, Russian, Spanish, Japanese, Simplified Chinese.
