@@ -123,6 +123,17 @@ Bugs, conversions that look wrong, and translation complaints:
 in the version for you. The interface was translated by the author without native-speaker
 proofreading, so those reports are genuinely welcome.
 
+## Related projects
+
+**[HDR2gainmap App](https://github.com/vastunghia/HDR2gainmapApp)** by vastunghia — open
+source, MIT. It picks up where an HDR editing session ends: hand it a 16-bit PNG or TIFF with
+a PQ or HLG transfer and it writes a HEIC carrying an ISO 21496-1 gain map, with fine control
+over how the SDR base is tone-mapped and, in recent versions, per-channel RGB gain maps.
+
+The two tools read different things. This one reads what the camera wrote — HLG HEIF straight
+off the card, no editor in between. That one reads an HDR export from Lightroom or a similar
+editor. If your workflow is shoot RAW, grade in HDR, then deliver, that is the tool you want.
+
 ## About this repository
 
 This repository carries releases only. The source is closed; `EULA.txt` has the terms the
