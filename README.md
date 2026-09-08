@@ -61,18 +61,23 @@ Your own files will differ. The point is that the measurement is one you can rep
 
 ## What it does
 
-- **Four ways to compress the range**, from the most protective to the most cinematic,
-  including the conversion described in ITU-R Report BT.2446-1 (Method A).
-- **Live side-by-side comparison** against another operator, against the system's own
+- **Two ways to compress the range**: a house look built to keep the most highlight detail
+  and be finished elsewhere, and the conversion described in ITU-R Report BT.2446-1
+  (Method A), implemented from the report. A look and a reference. (Two further presets
+  were removed in 0.78 — the release notes explain exactly why.)
+- **Live side-by-side comparison** against the other preset, against the system's own
   rendering, or against a file you already exported from somewhere else.
 - **Exposure, brightness, highlights, midtones, shadows and two kinds of contrast.**
-  Shadows and highlights work locally, taking each pixel's surroundings into account.
-- **Auto**, with a different method per operator.
+  They are global curves: two pixels of the same tone come out the same brightness wherever
+  they sit in the frame. Only Highlight local contrast reads a pixel's surroundings.
+- **Auto**, with a method of its own for each preset — on the selected photo, or on every
+  photo in a batch as it converts.
 - **A 100% loupe and a histogram** that flags clipping, and shows the HDR headroom when an
   HDR format is selected.
 - **Output as JPEG or HEIF**, 8 or 10 bit, plain SDR or carrying an ISO 21496-1:2025 gain map —
   one file that ordinary screens read as your SDR conversion and HDR displays show with the
-  highlights let back out.
+  highlights let back out. The gain map is offered with the house look only: under BT.2446 it
+  comes out empty, so the file would be larger and look identical.
 - **Five interface languages**: English, Russian, Spanish, Japanese, Simplified Chinese.
 
 Metadata — EXIF, GPS, orientation, IPTC — is carried across to the output.
@@ -83,7 +88,7 @@ The app installs an editing extension, and this is the part worth reading about.
 
 Import your `.HIF` files into Photos as usual and they sit there as HDR masters. Open one,
 press Edit, and pick **HLG to SDR/HDR** from the extensions menu. The same converter opens
-inside the Photos editor — the four operators, Auto, all seven sliders, the histogram — and
+inside the Photos editor — both presets, Auto, all seven sliders, the histogram — and
 it works on the **original master**, not on an export of it. That distinction is the whole
 point: every other route out of Photos hands you a frame that has already been folded down
 to SDR by somebody else's guess, and there is no getting the highlights back afterwards.
