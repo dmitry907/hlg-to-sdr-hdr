@@ -124,7 +124,7 @@ Download the `.dmg` from the releases page, open it, drag the app to Application
 ## Feedback
 
 Bugs, conversions that look wrong, and translation complaints:
-**fdbk-hlg-sdr@semeonov.com**, or the "Report a problem" button inside the app, which fills
+**publicone@me.com**, or the "Report a problem" button inside the app, which fills
 in the version for you. The interface was translated by the author without native-speaker
 proofreading, so those reports are genuinely welcome.
 
