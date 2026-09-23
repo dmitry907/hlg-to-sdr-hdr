@@ -12,4 +12,4 @@ HLG to SDR/HDR for iPhone, iPad and Mac does not collect, store or transmit pers
 - If your originals are in iCloud Photos, iOS may download them from iCloud when you convert them. That transfer is made by Apple's Photos framework, under Apple's privacy policy.
 - The app keeps its own settings, such as the interface language, on your device only.
 
-Questions: fdbk-hlg-sdr@semeonov.com
+Questions: publicone@me.com
