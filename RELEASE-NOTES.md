@@ -3,6 +3,19 @@
 This file ships with every release (DMG and the public releases repository).
 English is the reference text.
 
+## 0.791 — auto levels per photo is a switch
+
+**The short version.** Each photo now has its own Auto levels switch instead of a one-shot
+Auto button, and the batch switch is named for what it is.
+
+- **Batch settings** (was «Settings for all photos») holds **Batch auto levels**.
+- **Each photo has its own Auto levels switch.** It shows the batch setting until you flip it;
+  flipping it changes that photo only, and the file list marks the photo.
+- **Flipping Batch auto levels, either way, returns every photo to it** — photos with their
+  own switch and manual ones included. Changing the preset does not.
+- **Apply to all switches Batch auto levels off**: after it every photo carries the copied
+  numbers, and a switch left on would say the opposite of what the files get.
+
 ## 0.79 — one set of settings for the whole batch
 
 **The short version.** The window is reorganised around one rule: what applies to every
