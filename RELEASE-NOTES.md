@@ -3,6 +3,50 @@
 This file ships with every release (DMG and the public releases repository).
 English is the reference text.
 
+## 0.79 — one set of settings for the whole batch
+
+**The short version.** The window is reorganised around one rule: what applies to every
+photo is set once, what applies to one photo is set on that photo, and the app shows which
+is which. Closing the window now quits the app. Two texts that were wrong are corrected.
+
+### Settings for all photos
+
+Preset, format, quality, **Auto levels** and destination sit in one block and apply to the
+whole batch. Before, the preset belonged to each photo, and because the formats on offer
+depend on the preset, the format list changed with whichever photo was selected — selecting
+a BT.2446 photo could quietly switch an HDR format back to SDR for everyone.
+
+**Auto levels** is a switch. Off, photos are converted as the preset renders them, every
+slider at zero. On, every photo is measured on its own and gets its own exposure, highlights
+and shadows, and the sliders show what was measured for the selected photo — the preview is
+what the file will be. Before, the switch acted only while converting: the preview showed
+one thing and the file got another. If it was on in 0.78, it stays on.
+
+### Settings for the selected photo
+
+The sliders, **Auto**, **Reset** and **Apply to all**. Touching any slider, or pressing Auto
+for that photo, makes the photo **manual**: it keeps its own numbers whether Auto levels is
+on or off, and the file list marks it. Reset returns it to the settings for all photos.
+Apply to all copies the selected photo's sliders to every photo and makes them all manual.
+
+Before, a batch with Auto levels on overwrote numbers set by hand — including the ones Apply
+to all had just copied — without saying so. That no longer happens.
+
+### Closing the window quits the app
+
+It used to keep running without a window, and macOS 26 then listed it under Login Items as
+running in the background, although nothing in the app asks for that. Closing the window in
+the middle of a conversion now stops the batch; every file already written is complete.
+
+### Corrections
+
+- The note on the HEIF format said HEIF is smaller than JPEG. It is larger at the same
+  quality: on the test frames about 1.5× at 8 bit and about 2× at 10 bit. Corrected in all
+  five languages.
+- «Report a problem…» in About wrote to an address that did not exist, so reports went
+  nowhere. It now writes to publicone@me.com.
+- «Folder» is now called «Destination».
+
 ## 0.78 — two presets, honest sliders, twice the speed
 
 **The short version.** Two of the four tone-mapping presets are gone, because on
